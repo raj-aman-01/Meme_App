@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#08B2FF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="227dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:padding="10sp"
+        android:text="Memonia"
+
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+android:textColor="#ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/memeImage"
+        android:layout_width="358dp"
+        android:layout_height="337dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="71dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toBottomOf="@+id/memeImage"
+        app:layout_constraintEnd_toEndOf="@+id/memeImage"
+        app:layout_constraintStart_toStartOf="@+id/memeImage"
+        app:layout_constraintTop_toTopOf="@+id/memeImage" />
+
+    <Button
+        android:id="@+id/nextMeme"
+        android:layout_width="163dp"
+        android:layout_height="89dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="nextMeme"
+        android:text="Next"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/shareMeme"
+        android:layout_width="161dp"
+        android:layout_height="89dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="shareMeme"
+        android:text="Share"
+        android:textColor="#0C0C0C"
+        android:textSize="15sp"
+
+        android:textStyle="bold"
+
+
+        app:backgroundTint="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
